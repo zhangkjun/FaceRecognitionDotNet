@@ -1,0 +1,39 @@
+﻿// ReSharper disable once CheckNamespace
+namespace DlibDotNet
+{
+
+    public abstract class Array2DBase : TwoDimensionObjectBase
+    {
+
+        #region Constructors
+
+        protected Array2DBase(bool isEnabledDispose = true)
+            : base(isEnabledDispose)
+        {
+        }
+
+        #endregion
+
+        public abstract ImageTypes ImageType
+        {
+            get;
+        }
+
+        public abstract Rectangle Rect
+        {
+            get;
+        }
+
+
+        public abstract System.IntPtr Data
+        {
+            get;
+        }
+        public abstract int Size
+        {
+            get;
+        }
+
+    }
+
+}

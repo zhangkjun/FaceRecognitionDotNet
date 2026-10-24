@@ -1,0 +1,1748 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DlibDotNet</name>
+    </assembly>
+    <members>
+        <member name="M:DlibDotNet.Array2D`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Array2D`1.Row`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Array2DMatrix`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Array2DMatrix`1.Row`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.HsiPixel">
+            <summary>
+            HSI 色空間値を表します。
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.HsiPixel.H">
+            <summary>
+            この <see cref="T:DlibDotNet.HsiPixel"/> の色相要素を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.HsiPixel"/> の色相要素。</value>
+        </member>
+        <member name="F:DlibDotNet.HsiPixel.S">
+            <summary>
+            この <see cref="T:DlibDotNet.HsiPixel"/> の彩度要素を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.HsiPixel"/> の彩度要素。</value>
+        </member>
+        <member name="F:DlibDotNet.HsiPixel.I">
+            <summary>
+            この <see cref="T:DlibDotNet.HsiPixel"/> の輝度要素を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.HsiPixel"/> の輝度要素。</value>
+        </member>
+        <member name="M:DlibDotNet.HsiPixel.#ctor(System.Byte,System.Byte,System.Byte)">
+            <summary>ｃ
+            HSI 色空間値を指定して、<see cref="T:DlibDotNet.HsiPixel"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="hue">色空間の色相要素。</param>
+            <param name="saturation">色空間の彩度要素。</param>
+            <param name="intensity">色空間の輝度要素。</param>
+        </member>
+        <member name="M:DlibDotNet.HsiPixel.Equals(System.Object)">
+            <summary>
+            この <see cref="T:DlibDotNet.HsiPixel"/> が、指定した <see cref="T:System.Object"/> と同じHSI 色空間値を含んでいるかどうかを示します。
+            </summary>
+            <param name="obj">テスト対象の <see cref="T:System.Object"/></param>
+            <returns><paramref name="obj"/> が <see cref="T:DlibDotNet.HsiPixel"/> で、この <see cref="T:DlibDotNet.HsiPixel"/> とHSI 色空間値が同じである場合、このメソッドは <code>true</code> を返します。</returns>
+        </member>
+        <member name="M:DlibDotNet.HsiPixel.GetHashCode">
+            <summary>
+            この <see cref="T:DlibDotNet.HsiPixel"/> 構造体のハッシュ コードを返します。
+            </summary>
+            <returns>この <see cref="T:DlibDotNet.HsiPixel"/> 構造体のハッシュ値を指定する整数値。</returns>
+        </member>
+        <member name="M:DlibDotNet.HsiPixel.op_Equality(DlibDotNet.HsiPixel,DlibDotNet.HsiPixel)">
+            <summary>
+            2 つの <see cref="T:DlibDotNet.HsiPixel"/> 構造体を比較します。 この結果は、2 つの <see cref="T:DlibDotNet.HsiPixel"/> 構造体の <see cref="P:DlibDotNet.HsiPixel.H"/> プロパティと <see cref="P:DlibDotNet.HsiPixel.S"/> プロパティと <see cref="P:DlibDotNet.HsiPixel.I"/> プロパティの値が等しいかどうかを示します。
+            </summary>
+            <param name="left">比較する <see cref="T:DlibDotNet.HsiPixel"/>。</param>
+            <param name="right">比較する <see cref="T:DlibDotNet.HsiPixel"/>。</param>
+            <returns><paramref name="left"/> と <paramref name="right"/> の <see cref="T:DlibDotNet.HsiPixel"/> 構造体の <see cref="P:DlibDotNet.HsiPixel.H"/> 値と <see cref="P:DlibDotNet.HsiPixel.S"/> 値と <see cref="P:DlibDotNet.HsiPixel.I"/> 値が等しい場合は <code>true</code> を返します。それ以外の場合は <code>false</code> を返します。</returns>
+        </member>
+        <member name="M:DlibDotNet.HsiPixel.op_Inequality(DlibDotNet.HsiPixel,DlibDotNet.HsiPixel)">
+            <summary>
+            2 つの <see cref="T:DlibDotNet.HsiPixel"/> オブジェクトを比較します。 この結果は、2 つの <see cref="T:DlibDotNet.HsiPixel"/> オブジェクトの <see cref="P:DlibDotNet.HsiPixel.H"/> プロパティと <see cref="P:DlibDotNet.HsiPixel.S"/> プロパティと <see cref="P:DlibDotNet.HsiPixel.I"/> プロパティの値が異なるかどうかを示します。
+            </summary>
+            <param name="left">比較する <see cref="T:DlibDotNet.HsiPixel"/>。</param>
+            <param name="right">比較する <see cref="T:DlibDotNet.HsiPixel"/>。</param>
+            <returns><paramref name="left"/> および <paramref name="right"/> の <see cref="P:DlibDotNet.HsiPixel.H"/> プロパティまたは <see cref="P:DlibDotNet.HsiPixel.S"/> プロパティまたは <see cref="P:DlibDotNet.HsiPixel.I"/> プロパティの値が異なる場合は <code>true</code>。それ以外の場合は <code>false</code>。</returns>
+        </member>        
+        <member name="T:DlibDotNet.RgbAlphaPixel">
+            <summary>
+            ARGB カラー値を表します。
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.RgbAlphaPixel.Red">
+            <summary>
+            この <see cref="T:DlibDotNet.RgbAlphaPixel"/> の赤色要素を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.RgbAlphaPixel"/> の赤色要素。</value>
+        </member>
+        <member name="F:DlibDotNet.RgbAlphaPixel.Green">
+            <summary>
+            この <see cref="T:DlibDotNet.RgbAlphaPixel"/> の緑色要素を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.RgbAlphaPixel"/> の緑色要素。</value>
+        </member>
+        <member name="F:DlibDotNet.RgbAlphaPixel.Blue">
+            <summary>
+            この <see cref="T:DlibDotNet.RgbAlphaPixel"/> の青色要素を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.RgbAlphaPixel"/> の青色要素。</value>
+        </member>
+        <member name="F:DlibDotNet.RgbAlphaPixel.Alpha">
+            <summary>
+            この <see cref="T:DlibDotNet.RgbAlphaPixel"/> のアルファ要素を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.RgbAlphaPixel"/> のアルファ要素。</value>
+        </member>
+        <member name="M:DlibDotNet.RgbAlphaPixel.#ctor(System.Byte,System.Byte,System.Byte)">
+            <summary>
+            ARGB カラー値を指定して、<see cref="T:DlibDotNet.Point"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="alpha">アルファ要素。</param>
+            <param name="red">赤色要素。</param>
+            <param name="green">緑色要素。</param>
+            <param name="blue">青色要素。</param>
+        </member>
+        <member name="M:DlibDotNet.RgbAlphaPixel.Equals(System.Object)">
+            <summary>
+            この <see cref="T:DlibDotNet.RgbAlphaPixel"/> が、指定した <see cref="T:System.Object"/> と同じ ARGB カラー値を含んでいるかどうかを示します。
+            </summary>
+            <param name="obj">テスト対象の <see cref="T:System.Object"/></param>
+            <returns><paramref name="obj"/> が <see cref="T:DlibDotNet.RgbAlphaPixel"/> で、この <see cref="T:DlibDotNet.RgbAlphaPixel"/> と ARGB カラー値が同じである場合、このメソッドは <code>true</code> を返します。</returns>
+        </member>
+        <member name="M:DlibDotNet.RgbAlphaPixel.GetHashCode">
+            <summary>
+            この <see cref="T:DlibDotNet.RgbAlphaPixel"/> 構造体のハッシュ コードを返します。
+            </summary>
+            <returns>この <see cref="T:DlibDotNet.RgbAlphaPixel"/> 構造体のハッシュ値を指定する整数値。</returns>
+        </member>
+        <member name="M:DlibDotNet.RgbAlphaPixel.op_Equality(DlibDotNet.RgbAlphaPixel,DlibDotNet.RgbAlphaPixel)">
+            <summary>
+            2 つの <see cref="T:DlibDotNet.RgbAlphaPixel"/> 構造体を比較します。 この結果は、2 つの <see cref="T:DlibDotNet.RgbAlphaPixel"/> 構造体の <see cref="P:DlibDotNet.RgbAlphaPixel.Alpha"/> プロパティと <see cref="P:DlibDotNet.RgbAlphaPixel.Red"/> プロパティと <see cref="P:DlibDotNet.RgbAlphaPixel.Green"/> プロパティと <see cref="P:DlibDotNet.RgbAlphaPixel.Blue"/> プロパティの値が等しいかどうかを示します。
+            </summary>
+            <param name="left">比較する <see cref="T:DlibDotNet.RgbAlphaPixel"/>。</param>
+            <param name="right">比較する <see cref="T:DlibDotNet.RgbAlphaPixel"/>。</param>
+            <returns><paramref name="left"/> と <paramref name="right"/> の <see cref="T:DlibDotNet.RgbAlphaPixel"/> 構造体の <see cref="P:DlibDotNet.RgbAlphaPixel.Alpha"/> 値と <see cref="P:DlibDotNet.RgbAlphaPixel.Red"/> 値と <see cref="P:DlibDotNet.RgbAlphaPixel.Green"/> 値と <see cref="P:DlibDotNet.RgbAlphaPixel.Blue"/> 値が等しい場合は <code>true</code> を返します。それ以外の場合は <code>false</code> を返します。</returns>
+        </member>
+        <member name="M:DlibDotNet.RgbAlphaPixel.op_Inequality(DlibDotNet.RgbAlphaPixel,DlibDotNet.RgbAlphaPixel)">
+            <summary>
+            2 つの <see cref="T:DlibDotNet.RgbAlphaPixel"/> オブジェクトを比較します。 この結果は、2 つの <see cref="T:DlibDotNet.RgbAlphaPixel"/> オブジェクトの <see cref="P:DlibDotNet.RgbAlphaPixel.Alpha"/> プロパティと <see cref="P:DlibDotNet.RgbAlphaPixel.Red"/> プロパティと <see cref="P:DlibDotNet.RgbAlphaPixel.Green"/> プロパティと <see cref="P:DlibDotNet.RgbAlphaPixel.Blue"/> プロパティの値が異なるかどうかを示します。
+            </summary>
+            <param name="left">比較する <see cref="T:DlibDotNet.RgbAlphaPixel"/>。</param>
+            <param name="right">比較する <see cref="T:DlibDotNet.RgbAlphaPixel"/>。</param>
+            <returns><paramref name="left"/> および <paramref name="right"/> の <see cref="P:DlibDotNet.RgbAlphaPixel.Alpha"/> プロパティまたは <see cref="P:DlibDotNet.RgbAlphaPixel.Red"/> プロパティまたは <see cref="P:DlibDotNet.RgbAlphaPixel.Green"/> プロパティまたは <see cref="P:DlibDotNet.RgbAlphaPixel.Blue"/> プロパティの値が異なる場合は <code>true</code>。それ以外の場合は <code>false</code>。</returns>
+        </member>
+        <member name="T:DlibDotNet.RgbPixel">
+            <summary>
+            RGB カラー値を表します。
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.RgbPixel.Red">
+            <summary>
+            この <see cref="T:DlibDotNet.RgbPixel"/> の赤色要素を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.RgbPixel"/> の赤色要素。</value>
+        </member>
+        <member name="F:DlibDotNet.RgbPixel.Green">
+            <summary>
+            この <see cref="T:DlibDotNet.RgbPixel"/> の緑色要素を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.RgbPixel"/> の緑色要素。</value>
+        </member>
+        <member name="F:DlibDotNet.RgbPixel.Blue">
+            <summary>
+            この <see cref="T:DlibDotNet.RgbPixel"/> の青色要素を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.RgbPixel"/> の青色要素。</value>
+        </member>
+        <member name="M:DlibDotNet.RgbPixel.#ctor(System.Byte,System.Byte,System.Byte)">
+            <summary>
+            RGB カラー値を指定して、<see cref="T:DlibDotNet.Point"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="red">赤色要素。</param>
+            <param name="green">緑色要素。</param>
+            <param name="blue">青色要素。</param>
+        </member>
+        <member name="M:DlibDotNet.RgbPixel.Equals(System.Object)">
+            <summary>
+            この <see cref="T:DlibDotNet.RgbPixel"/> が、指定した <see cref="T:System.Object"/> と同じ RGB カラー値を含んでいるかどうかを示します。
+            </summary>
+            <param name="obj">テスト対象の <see cref="T:System.Object"/></param>
+            <returns><paramref name="obj"/> が <see cref="T:DlibDotNet.RgbPixel"/> で、この <see cref="T:DlibDotNet.RgbPixel"/> と RGB カラー値が同じである場合、このメソッドは <code>true</code> を返します。</returns>
+        </member>
+        <member name="M:DlibDotNet.RgbPixel.GetHashCode">
+            <summary>
+            この <see cref="T:DlibDotNet.RgbPixel"/> 構造体のハッシュ コードを返します。
+            </summary>
+            <returns>この <see cref="T:DlibDotNet.RgbPixel"/> 構造体のハッシュ値を指定する整数値。</returns>
+        </member>
+        <member name="M:DlibDotNet.RgbPixel.op_Equality(DlibDotNet.RgbPixel,DlibDotNet.RgbPixel)">
+            <summary>
+            2 つの <see cref="T:DlibDotNet.RgbPixel"/> 構造体を比較します。 この結果は、2 つの <see cref="T:DlibDotNet.RgbPixel"/> 構造体の <see cref="P:DlibDotNet.RgbPixel.Red"/> プロパティと <see cref="P:DlibDotNet.RgbPixel.Green"/> プロパティと <see cref="P:DlibDotNet.RgbPixel.Blue"/> プロパティの値が等しいかどうかを示します。
+            </summary>
+            <param name="left">比較する <see cref="T:DlibDotNet.RgbPixel"/>。</param>
+            <param name="right">比較する <see cref="T:DlibDotNet.RgbPixel"/>。</param>
+            <returns><paramref name="left"/> と <paramref name="right"/> の <see cref="T:DlibDotNet.RgbPixel"/> 構造体の <see cref="P:DlibDotNet.RgbPixel.Red"/> 値と <see cref="P:DlibDotNet.RgbPixel.Green"/> 値と <see cref="P:DlibDotNet.RgbPixel.Blue"/> 値が等しい場合は <code>true</code> を返します。それ以外の場合は <code>false</code> を返します。</returns>
+        </member>
+        <member name="M:DlibDotNet.RgbPixel.op_Inequality(DlibDotNet.RgbPixel,DlibDotNet.RgbPixel)">
+            <summary>
+            2 つの <see cref="T:DlibDotNet.RgbPixel"/> オブジェクトを比較します。 この結果は、2 つの <see cref="T:DlibDotNet.RgbPixel"/> オブジェクトの <see cref="P:DlibDotNet.RgbPixel.Red"/> プロパティと <see cref="P:DlibDotNet.RgbPixel.Green"/> プロパティと <see cref="P:DlibDotNet.RgbPixel.Blue"/> プロパティの値が異なるかどうかを示します。
+            </summary>
+            <param name="left">比較する <see cref="T:DlibDotNet.RgbPixel"/>。</param>
+            <param name="right">比較する <see cref="T:DlibDotNet.RgbPixel"/>。</param>
+            <returns><paramref name="left"/> および <paramref name="right"/> の <see cref="P:DlibDotNet.RgbPixel.Red"/> プロパティまたは <see cref="P:DlibDotNet.RgbPixel.Green"/> プロパティまたは <see cref="P:DlibDotNet.RgbPixel.Blue"/> プロパティの値が異なる場合は <code>true</code>。それ以外の場合は <code>false</code>。</returns>
+        </member>
+        <member name="T:DlibDotNet.Array`1">
+            <summary>
+            オブジェクトの 1 次元配列 を表現します。
+            </summary>
+            <typeparam name="T">The type of elements in the array.</typeparam>
+        </member>
+        <member name="M:DlibDotNet.Array`1.#ctor">
+            <summary>
+            <see cref="T:DlibDotNet.Array`1"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Array`1.#ctor(System.UInt32)">
+            <summary>
+            配列のサイズを指定して、<see cref="T:DlibDotNet.Array`1"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="size">The number of elements which have initial values for their type.</param>
+        </member>
+        <member name="M:DlibDotNet.Array`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Array`1.GetEnumerator">
+            <summary>
+            コレクションを反復処理する列挙子を返します。
+            </summary>
+            <returns>コレクションの反復処理に使用できる <see cref="T:System.Collections.Generic.IEnumerator`1"/> 列挙子。</returns>
+        </member>
+        <member name="M:DlibDotNet.Array`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            コレクションを反復処理する列挙子を返します。
+            </summary>
+            <returns>コレクションを反復処理するために使用できる <see cref="T:System.Collections.IEnumerator"/> オブジェクト。</returns>
+        </member>
+        <member name="T:DlibDotNet.Dlib">
+            <summary>
+            dlib のメソッドを提供します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dlib.ExtractImage4Points``1(DlibDotNet.Array2D{``0},DlibDotNet.DPoint[],System.Int32,System.Int32)">
+            <summary>
+            画像から任意の四角形部分を抽出します。
+            </summary>
+            <typeparam name="T">画像の要素の型。</typeparam>
+            <param name="image">画像。</param>
+            <param name="points">画像上の 4 座標。</param>
+            <param name="width">戻り値の画像の幅。</param>
+            <param name="height">戻り値の画像の高さ。</param>
+            <returns><see cref="T:DlibDotNet.Array2D`1"/>。</returns>
+            <exception cref="T:System.ArgumentException">指定された画像の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="image"/> または <paramref name="points"/> が null 参照です。</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="points"/> の <see cref="P:System.Array.Length"/> は 4 でなくてはなりません。</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="width"/> または <paramref name="height"/>が 0 以下です。</exception>
+            <exception cref="T:System.NotSupportedException"></exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="image"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.ExtractImage4Points``1(DlibDotNet.Matrix{``0},DlibDotNet.DPoint[],System.Int32,System.Int32)">
+            <summary>
+            行列から任意の四角形部分を抽出します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="matrix">行列。</param>
+            <param name="points">画行列上の 4 座標。</param>
+            <param name="width">戻り値の行列の幅。</param>
+            <param name="height">戻り値の行列の高さ。</param>
+            <returns><see cref="T:DlibDotNet.Matrix`1"/>。</returns>
+            <exception cref="T:System.ArgumentException">指定された行列の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="P:DlibDotNet.MatrixBase.TemplateRows"/> または <see cref="P:DlibDotNet.MatrixBase.TemplateColumns"/> はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="matrix"/> または <paramref name="points"/> が null 参照です。</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="points"/> の <see cref="P:System.Array.Length"/> は 4 でなくてはなりません。</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="width"/> または <paramref name="height"/>が 0 以下です。</exception>
+            <exception cref="T:System.NotSupportedException"></exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="matrix"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.GetFrontalFaceDetector">
+            <summary>
+            カメラに向かって見える人間の顔を見つけるように構成されたオブジェクト検出器を返します。
+            </summary>
+            <returns><see cref="T:DlibDotNet.FrontalFaceDetector"/>。</returns>
+        </member>
+        <member name="M:DlibDotNet.Dlib.LoadBmp``1(System.String)">
+            <summary>
+            Microsoft Windows Bitmap ファイルを <see cref="T:DlibDotNet.Array2D`1"/> に読み込みます。
+            </summary>
+            <typeparam name="T">画像の要素の型。</typeparam>
+            <param name="path"><see cref="T:DlibDotNet.Array2D`1"/> を作成するファイルの名前を含む文字列。</param>
+            <returns>このメソッドが作成する <see cref="T:DlibDotNet.Array2D`1"/>。</returns>
+            <exception cref="T:System.ArgumentException">指定された画像の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="path"/> が null 参照です。</exception>
+            <exception cref="T:System.IO.FileNotFoundException">指令されたファイルは存在しません。</exception>
+            <exception cref="T:DlibDotNet.ImageLoadException">dlib で画像の読み込みに失敗しました。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.LoadDng``1(System.String)">
+            <summary>
+            DNG (Digital Negative) ファイルを <see cref="T:DlibDotNet.Array2D`1"/> に読み込みます。
+            </summary>
+            <typeparam name="T">画像の要素の型。</typeparam>
+            <param name="path"><see cref="T:DlibDotNet.Array2D`1"/> を作成するファイルの名前を含む文字列。</param>
+            <returns>このメソッドが作成する <see cref="T:DlibDotNet.Array2D`1"/>。</returns>
+            <exception cref="T:System.ArgumentException">指定された画像の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="path"/> が null 参照です。</exception>
+            <exception cref="T:System.IO.FileNotFoundException">指令されたファイルは存在しません。</exception>
+            <exception cref="T:DlibDotNet.ImageLoadException">dlib で画像の読み込みに失敗しました。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.LoadImage``1(System.String)">
+            <summary>
+            画像ファイルを <see cref="T:DlibDotNet.Array2D`1"/> に読み込みます。
+            </summary>
+            <typeparam name="T">画像の要素の型。</typeparam>
+            <param name="path"><see cref="T:DlibDotNet.Array2D`1"/> を作成するファイルの名前を含む文字列。</param>
+            <returns>このメソッドが作成する <see cref="T:DlibDotNet.Array2D`1"/>。</returns>
+            <exception cref="T:System.ArgumentException">指定された画像の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="path"/> が null 参照です。</exception>
+            <exception cref="T:System.IO.FileNotFoundException">指令されたファイルは存在しません。</exception>
+            <exception cref="T:DlibDotNet.ImageLoadException">dlib で画像の読み込みに失敗しました。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.LoadImageAsMatrix``1(System.String)">
+            <summary>
+            画像ファイルを <see cref="T:DlibDotNet.Matrix`1"/> に読み込みます。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="path"><see cref="T:DlibDotNet.Matrix`1"/> を作成するファイルの名前を含む文字列。</param>
+            <returns>このメソッドが作成する <see cref="T:DlibDotNet.Matrix`1"/>。</returns>
+            <exception cref="T:System.ArgumentException">指定された行列の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="path"/> が null 参照です。</exception>
+            <exception cref="T:System.IO.FileNotFoundException">指令されたファイルは存在しません。</exception>
+            <exception cref="T:DlibDotNet.ImageLoadException">dlib で画像の読み込みに失敗しました。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.LoadJpeg``1(System.String)">
+            <summary>
+            JPEG (Joint Photographic Experts Group) ファイルを <see cref="T:DlibDotNet.Array2D`1"/> に読み込みます。
+            </summary>
+            <typeparam name="T">画像の要素の型。</typeparam>
+            <param name="path"><see cref="T:DlibDotNet.Array2D`1"/> を作成するファイルの名前を含む文字列。</param>
+            <returns>このメソッドが作成する <see cref="T:DlibDotNet.Array2D`1"/>。</returns>
+            <exception cref="T:System.ArgumentException">指定された画像の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="path"/> が null 参照です。</exception>
+            <exception cref="T:System.IO.FileNotFoundException">指令されたファイルは存在しません。</exception>
+            <exception cref="T:DlibDotNet.ImageLoadException">dlib で画像の読み込みに失敗しました。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.LoadPng``1(System.String)">
+            <summary>
+            PNG (Portable Network Graphics) ファイルを <see cref="T:DlibDotNet.Array2D`1"/> に読み込みます。
+            </summary>
+            <typeparam name="T">画像の要素の型。</typeparam>
+            <param name="path"><see cref="T:DlibDotNet.Array2D`1"/> を作成するファイルの名前を含む文字列。</param>
+            <returns>このメソッドが作成する <see cref="T:DlibDotNet.Array2D`1"/>。</returns>
+            <exception cref="T:System.ArgumentException">指定された画像の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="path"/> が null 参照です。</exception>
+            <exception cref="T:System.IO.FileNotFoundException">指令されたファイルは存在しません。</exception>
+            <exception cref="T:DlibDotNet.ImageLoadException">dlib で画像の読み込みに失敗しました。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.SaveBmp(DlibDotNet.Array2DBase,System.String)">
+            <summary>
+            Microsoft Windows Bitmap ファイルとしてディスクに画像を保存します。
+            </summary>
+            <param name="image">画像。</param>
+            <param name="path">保存する画像へのファイル名を含む文字列。</param>
+            <exception cref="T:System.ArgumentException">指定された画像の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="!:Array2DBase.Rows"/> または <see cref="!:Array2DBase.Columns"/> が 0 以下です。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="image"/> または <paramref name="path"/> is null.</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="image"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.SaveBmp(DlibDotNet.MatrixBase,System.String)">
+            <summary>
+            Microsoft Windows Bitmap ファイルとしてディスクに行列を保存します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="matrix">行列。</param>
+            <param name="path">保存する行列へのファイル名を含む文字列。</param>
+            <exception cref="T:System.ArgumentException">指定された行列の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="P:DlibDotNet.MatrixBase.TemplateRows"/> または <see cref="P:DlibDotNet.MatrixBase.TemplateColumns"/> はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="P:DlibDotNet.TwoDimensionObjectBase.Rows"/> または <see cref="P:DlibDotNet.TwoDimensionObjectBase.Columns"/> が 0 以下です。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="matrix"/> または <paramref name="path"/> が null 参照です。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="matrix"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.SaveDng(DlibDotNet.Array2DBase,System.String)">
+            <summary>
+            DNG (Digital Negative) ファイルとしてディスクに画像を保存します。
+            </summary>
+            <param name="image">画像。</param>
+            <param name="path">保存する画像へのファイル名を含む文字列。</param>
+            <exception cref="T:System.ArgumentException">指定された画像の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="!:Array2DBase.Rows"/> または <see cref="!:Array2DBase.Columns"/> が 0 以下です。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="image"/> または <paramref name="path"/> is null.</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="image"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.SaveDng(DlibDotNet.MatrixBase,System.String)">
+            <summary>
+            DNG (Digital Negative) ファイルとしてディスクに行列を保存します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="matrix">行列。</param>
+            <param name="path">保存する行列へのファイル名を含む文字列。</param>
+            <exception cref="T:System.ArgumentException">指定された行列の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="P:DlibDotNet.MatrixBase.TemplateRows"/> または <see cref="P:DlibDotNet.MatrixBase.TemplateColumns"/> はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="P:DlibDotNet.TwoDimensionObjectBase.Rows"/> または <see cref="P:DlibDotNet.TwoDimensionObjectBase.Columns"/> が 0 以下です。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="matrix"/> または <paramref name="path"/> が null 参照です。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="matrix"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.SaveJpeg(DlibDotNet.Array2DBase,System.String,System.Int32)">
+            <summary>
+            JPEG (Joint Photographic Experts Group) ファイルとしてディスクに画像を保存します。
+            </summary>
+            <param name="image">画像。</param>
+            <param name="path">保存する画像へのファイル名を含む文字列。</param>
+            <param name="quality">ファイルの品質。0 以上 100 以下です。規定値は 75です。</param>
+            <exception cref="T:System.ArgumentException">指定された画像の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="!:Array2DBase.Rows"/> または <see cref="!:Array2DBase.Columns"/> が 0 以下です。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="image"/> または <paramref name="path"/> is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="quality"/> が 0 未満または 100 より大きいです。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="image"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.SaveJpeg(DlibDotNet.MatrixBase,System.String,System.Int32)">
+            <summary>
+            JPEG (Joint Photographic Experts Group) ファイルとしてディスクに行列を保存します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="matrix">行列。</param>
+            <param name="path">保存する行列へのファイル名を含む文字列。</param>
+            <param name="quality">ファイルの品質。0 以上 100 以下です。規定値は 75です。</param>
+            <exception cref="T:System.ArgumentException">指定された行列の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="P:DlibDotNet.MatrixBase.TemplateRows"/> または <see cref="P:DlibDotNet.MatrixBase.TemplateColumns"/> はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="P:DlibDotNet.TwoDimensionObjectBase.Rows"/> または <see cref="P:DlibDotNet.TwoDimensionObjectBase.Columns"/> が 0 以下です。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="matrix"/> または <paramref name="path"/> が null 参照です。</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="quality"/> が 0 未満または 100 より大きいです。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="matrix"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.SavePng(DlibDotNet.Array2DBase,System.String)">
+            <summary>
+            PNG (Portable Network Graphics) ファイルとしてディスクに画像を保存します。
+            </summary>
+            <param name="image">画像。</param>
+            <param name="path">保存する画像へのファイル名を含む文字列。</param>
+            <exception cref="T:System.ArgumentException">指定された画像の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="!:Array2DBase.Rows"/> または <see cref="!:Array2DBase.Columns"/> が 0 以下です。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="image"/> または <paramref name="path"/> is null.</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="image"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dlib.SavePng(DlibDotNet.MatrixBase,System.String)">
+            <summary>
+            PNG (Portable Network Graphics) ファイルとしてディスクに行列を保存します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="matrix">行列。</param>
+            <param name="path">保存する行列へのファイル名を含む文字列。</param>
+            <exception cref="T:System.ArgumentException">指定された行列の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="P:DlibDotNet.MatrixBase.TemplateRows"/> または <see cref="P:DlibDotNet.MatrixBase.TemplateColumns"/> はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentException"><see cref="P:DlibDotNet.TwoDimensionObjectBase.Rows"/> または <see cref="P:DlibDotNet.TwoDimensionObjectBase.Columns"/> が 0 以下です。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="matrix"/> または <paramref name="path"/> が null 参照です。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="matrix"/> は破棄されています。</exception>
+        </member>
+        <member name="T:DlibDotNet.Cuda">
+            <summary>
+            CUDA (Compute Unified Device Architecture) のメソッドを提供します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Cuda.TryGetDriverVersion(System.Int32@)">
+            <summary>
+            CUDA のドライバー バージョンを取得します。
+            </summary>
+            <param name="version">メソッドから戻るとき、CUDA のドライバー バージョンを返します。</param>
+            <returns>CUDA のドライバーがインストールされており、かつ CUDA のシステムが正しい値を返した場合は <code>true</code>、それ以外の場合は <code>false</code>。</returns>
+        </member>
+        <member name="M:DlibDotNet.Cuda.TryGetRuntimeVersion(System.Int32@)">
+            <summary>
+            CUDA のランタイム バージョンを取得します。
+            </summary>
+            <param name="version">メソッドから戻るとき、CUDA のランタイム バージョンを返します。</param>
+            <returns>CUDA のランタイムがインストールされており、かつ CUDA のシステムが正しい値を返した場合は <code>true</code>、それ以外の場合は <code>false</code>。</returns>
+        </member>
+        <member name="T:DlibDotNet.CudaException">
+            <summary>
+            この例外は、CUDA (Compute Unified Device Architecture) の汎用的な例外です。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.CudaException.DllName">
+            <summary>
+            <see cref="T:DlibDotNet.CudaException"/> をスローしたライブラリの名前を取得します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.CudaException.DriverVersion">
+            <summary>
+            CUDA ドライバのバージョンを取得します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.CudaException.ErrorCode">
+            <summary>
+            CUDA のエラー コードを取得します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.CudaException.RuntimeVersion">
+            <summary>
+            CUDA ランタイムのバージョンを取得します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.ImageDatasetMetadata.Box">
+            <summary>
+            アノテーションされた画像の矩形領域を表します。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageDatasetMetadata.Box.#ctor">
+            <summary>
+            <see cref="T:DlibDotNet.ImageDatasetMetadata.Box"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageDatasetMetadata.Box.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.ImageDatasetMetadata.Dataset">
+            <summary>
+            ラベル付けされた画像セットを表します。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageDatasetMetadata.Dataset.#ctor">
+            <summary>
+            <see cref="T:DlibDotNet.ImageDatasetMetadata.Dataset"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageDatasetMetadata.Dataset.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.ImageDatasetMetadata.Gender">
+            <summary>
+            Gender 列挙型は性別を指定します。
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.ImageDatasetMetadata.Gender.Unknown">
+            <summary>
+            不明。
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.ImageDatasetMetadata.Gender.Male">
+            <summary>
+            男性。
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.ImageDatasetMetadata.Gender.Female">
+            <summary>
+            女性。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.ImageDatasetMetadata.Image">
+            <summary>
+            アノテーションされた画像を表します。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageDatasetMetadata.Image.#ctor">
+            <summary>
+            <see cref="T:DlibDotNet.ImageDatasetMetadata.Image"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageDatasetMetadata.Image.#ctor(System.String)">
+            <summary>
+            画像のファイル名を指定して、<see cref="T:DlibDotNet.ImageDatasetMetadata.Image"/> クラスの新しいインスタンスを初期化します
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.ImageDatasetMetadata.Image.Boxes">
+            <summary>
+            画像のアノテーションされた矩形領域のコレクションを取得または設定します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.ImageDatasetMetadata.Image.FileName">
+            <summary>
+            画像のファイル名を取得または設定します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageDatasetMetadata.Image.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.DlibObject">
+            <summary>
+            ネイティブ構造体のポインタを保持するクラスです。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.DlibObject.#ctor(System.Boolean)">
+            <summary>
+            インスタンスが破棄可能かどうかを示す値を指定して、<see cref="T:DlibDotNet.DlibObject"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="isEnabledDispose">インスタンスが可能である場合は true。それ以外の場合は false。</param>
+        </member>
+        <member name="P:DlibDotNet.DlibObject.IsDisposed">
+            <summary>
+            インスタンスが破棄されているかどうかを示す値を取得します。
+            </summary>
+            <returns>インスタンスが破棄されている場合は true。それ以外の場合は false。</returns>
+        </member>
+        <member name="P:DlibDotNet.DlibObject.IsEnableDispose">
+            <summary>
+            インスタンスが破棄可能かどうかを示す値を取得します。
+            </summary>
+            <returns>インスタンスが破棄可能である場合は true。それ以外の場合は false。</returns>
+        </member>
+        <member name="P:DlibDotNet.DlibObject.NativePtr">
+            <summary>
+            ネイティブ構造体のポインタを取得します。
+            </summary>>
+        </member>
+        <member name="M:DlibDotNet.DlibObject.ThrowIfDisposed">
+            <summary>
+            オブジェクトが破棄されている場合、<see cref="T:System.ObjectDisposedException"/> がスローされます。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.DlibObject.DisposeManaged">
+            <summary>
+            マネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.DlibObject.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.DlibObject.Dispose">
+            <summary>
+            この <see cref="T:DlibDotNet.DlibObject"/> によって使用されている全てのリソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.DlibObject.Dispose(System.Boolean)">
+            <summary>
+            この <see cref="T:DlibDotNet.DlibObject"/> によって使用されている全てのリソースを解放します。
+            </summary>
+            <param name="disposing"><see cref="M:System.IDisposable.Dispose"/> メソッドが呼ばれたかどうかを示す値。</param>
+        </member>
+        <member name="M:DlibDotNet.Dnn.Adam.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.Dnn.Cuda">
+            <summary>
+            CUDA (Compute Unified Device Architecture) のメソッドを提供します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dnn.Cuda.TryGetDriverVersion(System.Int32@)">
+            <summary>
+            CUDA のドライバー バージョンを取得します。
+            </summary>
+            <param name="version">メソッドから戻るとき、CUDA のドライバー バージョンを返します。</param>
+            <returns>CUDA のドライバーがインストールされており、かつ CUDA のシステムが正しい値を返した場合は <code>true</code>、それ以外の場合は <code>false</code>。</returns>
+        </member>
+        <member name="M:DlibDotNet.Dnn.Cuda.TryGetRuntimeVersion(System.Int32@)">
+            <summary>
+            CUDA のランタイム バージョンを取得します。
+            </summary>
+            <param name="version">メソッドから戻るとき、CUDA のランタイム バージョンを返します。</param>
+            <returns>CUDA のランタイムがインストールされており、かつ CUDA のシステムが正しい値を返した場合は <code>true</code>、それ以外の場合は <code>false</code>。</returns>
+        </member>
+        <member name="M:DlibDotNet.Dnn.DnnTrainer`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dnn.InputRgbImagePyramid`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.Dnn.LossMetric">
+            <summary>
+            同一のクラスラベルを共有するオブジェクトを互いに近づけ、異なるラベルを持つオブジェクトを離すようなベクター空間にオブジェクトをマッピングす方法を学習するディープニューラルネットワークの損失層を表現します。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMetric.#ctor(System.Int32)">
+            <summary>
+            ネットワーク タイプを指定して<see cref="T:DlibDotNet.Dnn.LossMetric"/> クラスの新しいクラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="networkType">ネットワーク タイプ。</param>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMetric.Train``1(DlibDotNet.Dnn.DnnTrainer{DlibDotNet.Dnn.LossMetric},System.Collections.Generic.IEnumerable{DlibDotNet.Matrix{``0}},System.Collections.Generic.IEnumerable{System.UInt32})">
+            <summary>
+            与えられた訓練データに基づいて教師ありニューラル ネットワークを訓練します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="trainer"><see cref="T:DlibDotNet.Dnn.LossMetric"/> を訓練するオブジェクト。</param>
+            <param name="data">訓練データ。</param>
+            <param name="label">ラベル。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="trainer"/> または <paramref name="data"/> または <paramref name="label"/> が null 参照。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="trainer"/> は破棄されています。</exception>
+            <exception cref="T:System.NotSupportedException">指定された行列の要素の型はサポートされていません。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMetric.TrainOneStep``1(DlibDotNet.Dnn.DnnTrainer{DlibDotNet.Dnn.LossMetric},System.Collections.Generic.IEnumerable{DlibDotNet.Matrix{``0}},System.Collections.Generic.IEnumerable{System.UInt32})">
+            <summary>
+            与えられたデータとラベルのミニバッチに基づいて 1 回の確率的勾配更新のステップを実行します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="trainer"><see cref="T:DlibDotNet.Dnn.LossMetric"/> を訓練するオブジェクト。</param>
+            <param name="data">訓練データ。</param>
+            <param name="label">ラベル。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="trainer"/> または <paramref name="data"/> または <paramref name="label"/> が null 参照。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="trainer"/> は破棄されています。</exception>
+            <exception cref="T:System.NotSupportedException">指定された行列の要素の型はサポートされていません。</exception>
+        </member>
+        <member name="T:DlibDotNet.Dnn.LossMmod">
+            <summary>
+            Max Maring Object Detection 損失のためのディープニューラルネットワークの損失層を表現します。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMmod.#ctor(System.Int32)">
+            <summary>
+            ネットワーク タイプを指定して<see cref="T:DlibDotNet.Dnn.LossMmod"/> クラスの新しいクラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="networkType">ネットワーク タイプ。</param>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMmod.#ctor(DlibDotNet.Dnn.MModOptions,System.Int32)">
+            <summary>
+            パラメータとネットワーク タイプを指定して<see cref="T:DlibDotNet.Dnn.LossMmod"/> クラスの新しいクラスの新しいインスタンスを初期化します
+            </summary>
+            <param name="options">パラメータ。</param>
+            <param name="networkType">ネットワーク タイプ。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="options"/> が null 参照。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="options"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMmod.Train``1(DlibDotNet.Dnn.DnnTrainer{DlibDotNet.Dnn.LossMmod},System.Collections.Generic.IEnumerable{DlibDotNet.Matrix{``0}},System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{DlibDotNet.MModRect}})">
+            <summary>
+            与えられた訓練データに基づいて教師ありニューラル ネットワークを訓練します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="trainer"><see cref="T:DlibDotNet.Dnn.LossMmod"/> を訓練するオブジェクト。</param>
+            <param name="data">訓練データ。</param>
+            <param name="label">ラベル。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="trainer"/> または <paramref name="data"/> または <paramref name="label"/> が null 参照。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="trainer"/> は破棄されています。</exception>
+            <exception cref="T:System.NotSupportedException">指定された行列の要素の型はサポートされていません。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMmod.TrainOneStep``1(DlibDotNet.Dnn.DnnTrainer{DlibDotNet.Dnn.LossMmod},System.Collections.Generic.IEnumerable{DlibDotNet.Matrix{``0}},System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{DlibDotNet.MModRect}})">
+            <summary>
+            与えられたデータとラベルのミニバッチに基づいて 1 回の確率的勾配更新のステップを実行します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="trainer"><see cref="T:DlibDotNet.Dnn.LossMmod"/> を訓練するオブジェクト。</param>
+            <param name="data">訓練データ。</param>
+            <param name="label">ラベル。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="trainer"/> または <paramref name="data"/> または <paramref name="label"/> が null 参照。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="trainer"/> は破棄されています。</exception>
+            <exception cref="T:System.NotSupportedException">指定された行列の要素の型はサポートされていません。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMmod.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.Dnn.LossMulticlassLog">
+            <summary>
+            多クラス分類問題に適した多クラス ロジスティクス回帰損失 (例えば、負の対数尤度損失) のためのディープニューラルネットワークの損失層を表現します。特に、このクラスはスカラの出力を扱います。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMulticlassLog.#ctor(System.Int32)">
+            <summary>
+            ネットワーク タイプを指定して<see cref="T:DlibDotNet.Dnn.LossMulticlassLog"/> クラスの新しいクラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="networkType">ネットワーク タイプ。</param>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMulticlassLog.Train``1(DlibDotNet.Dnn.DnnTrainer{DlibDotNet.Dnn.LossMulticlassLog},System.Collections.Generic.IEnumerable{DlibDotNet.Matrix{``0}},System.Collections.Generic.IEnumerable{System.UInt32})">
+            <summary>
+            与えられた訓練データに基づいて教師ありニューラル ネットワークを訓練します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="trainer"><see cref="T:DlibDotNet.Dnn.LossMulticlassLog"/> を訓練するオブジェクト。</param>
+            <param name="data">訓練データ。</param>
+            <param name="label">ラベル。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="trainer"/> または <paramref name="data"/> または <paramref name="label"/> が null 参照。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="trainer"/> は破棄されています。</exception>
+            <exception cref="T:System.NotSupportedException">指定された行列の要素の型はサポートされていません。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMulticlassLog.TrainOneStep``1(DlibDotNet.Dnn.DnnTrainer{DlibDotNet.Dnn.LossMulticlassLog},System.Collections.Generic.IEnumerable{DlibDotNet.Matrix{``0}},System.Collections.Generic.IEnumerable{System.UInt32})">
+            <summary>
+            与えられたデータとラベルのミニバッチに基づいて 1 回の確率的勾配更新のステップを実行します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="trainer"><see cref="T:DlibDotNet.Dnn.LossMulticlassLog"/> を訓練するオブジェクト。</param>
+            <param name="data">訓練データ。</param>
+            <param name="label">ラベル。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="trainer"/> または <paramref name="data"/> または <paramref name="label"/> が null 参照。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="trainer"/> は破棄されています。</exception>
+            <exception cref="T:System.NotSupportedException">指定された行列の要素の型はサポートされていません。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMulticlassLog.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.Dnn.LossMulticlassLogPerPixel">
+            <summary>
+            多クラス分類問題に適した多クラス ロジスティクス回帰損失 (例えば、負の対数尤度損失) のためのディープニューラルネットワークの損失層を表現します。特に、このクラスは行列の出力を扱います。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMulticlassLogPerPixel.#ctor(System.Int32)">
+            <summary>
+            ネットワーク タイプを指定して<see cref="T:DlibDotNet.Dnn.LossMulticlassLogPerPixel"/> クラスの新しいクラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="networkType">ネットワーク タイプ。</param>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMulticlassLogPerPixel.Train``1(DlibDotNet.Dnn.DnnTrainer{DlibDotNet.Dnn.LossMulticlassLogPerPixel},System.Collections.Generic.IEnumerable{DlibDotNet.Matrix{``0}},System.Collections.Generic.IEnumerable{DlibDotNet.Matrix{System.UInt16}})">
+            <summary>
+            与えられた訓練データに基づいて教師ありニューラル ネットワークを訓練します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="trainer"><see cref="T:DlibDotNet.Dnn.LossMulticlassLogPerPixel"/> を訓練するオブジェクト。</param>
+            <param name="data">訓練データ。</param>
+            <param name="label">ラベル。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="trainer"/> または <paramref name="data"/> または <paramref name="label"/> が null 参照。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="trainer"/> は破棄されています。</exception>
+            <exception cref="T:System.NotSupportedException">指定された行列の要素の型はサポートされていません。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMulticlassLogPerPixel.TrainOneStep``1(DlibDotNet.Dnn.DnnTrainer{DlibDotNet.Dnn.LossMulticlassLogPerPixel},System.Collections.Generic.IEnumerable{DlibDotNet.Matrix{``0}},System.Collections.Generic.IEnumerable{DlibDotNet.Matrix{System.UInt16}})">
+            <summary>
+            与えられたデータとラベルのミニバッチに基づいて 1 回の確率的勾配更新のステップを実行します。
+            </summary>
+            <typeparam name="T">行列の要素の型。</typeparam>
+            <param name="trainer"><see cref="T:DlibDotNet.Dnn.LossMulticlassLogPerPixel"/> を訓練するオブジェクト。</param>
+            <param name="data">訓練データ。</param>
+            <param name="label">ラベル。</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="trainer"/> または <paramref name="data"/> または <paramref name="label"/> が null 参照。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="trainer"/> は破棄されています。</exception>
+            <exception cref="T:System.NotSupportedException">指定された行列の要素の型はサポートされていません。</exception>
+        </member>
+        <member name="M:DlibDotNet.Dnn.LossMulticlassLogPerPixel.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.Dnn.MModOptions">
+            <summary>
+            このオブジェクトは <see cref="T:DlibDotNet.Dnn.LossMmod"/> の振る舞いを制御するすべてのパラメータを格納しています。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dnn.NetResult`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.Dnn.NotSupportNetworkTypeException">
+            <summary>
+            この例外は、サポートされていないネットワーク タイプが指定されたときにスローされます。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dnn.NotSupportNetworkTypeException.#ctor(System.Int32)">
+            <summary>
+            この例外の原因であるネットワーク タイプを指定して、<see cref="T:DlibDotNet.Dnn.NotSupportNetworkTypeException"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="networkType">ネットワーク タイプ。</param>
+        </member>
+        <member name="M:DlibDotNet.Dnn.NotSupportNetworkTypeException.#ctor(System.Int32,System.String,System.Exception)">
+            <summary>
+            この例外の原因であるネットワーク タイプ、エラー メッセージ、内部例外への参照を指定して、<see cref="T:DlibDotNet.Dnn.NotSupportNetworkTypeException"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="networkType">ネットワーク タイプ。</param>
+            <param name="message">例外の原因を説明するエラー メッセージ。</param>
+            <param name="innerException">現在の例外の原因である例外。内部例外が指定されていない場合は、null 参照。</param>
+        </member>
+        <member name="P:DlibDotNet.Dnn.NotSupportNetworkTypeException.NetworkType">
+            <summary>
+            この例外の原因であるネットワーク タイプを取得します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dnn.PropagateException.#ctor">
+            <summary>
+            <see cref="T:DlibDotNet.Dnn.PropagateException"/> クラスの新しいクラスの新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dnn.ResizableTensor.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Dnn.Sgd.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.EnumerableDisposer`1.Finalize">
+            <summary>
+            オブジェクトが、ガベージ コレクションによって収集される前に、リソースの解放とその他のクリーンアップ操作の実行を試みることができるようにします。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.EnumerableDisposer`1.IsDisposed">
+            <summary>
+            インスタンスが破棄されているかどうかを示す値を取得します。
+            </summary>
+            <returns>インスタンスが破棄されている場合は true。それ以外の場合は false。</returns>
+        </member>
+        <member name="M:DlibDotNet.EnumerableDisposer`1.Dispose">
+            <summary>
+            この <see cref="T:DlibDotNet.EnumerableDisposer`1"/> によって使用されている全てのリソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.EnumerableDisposer`1.Dispose(System.Boolean)">
+            <summary>
+            この <see cref="T:DlibDotNet.EnumerableDisposer`1"/> によって使用されている全てのリソースを解放します。
+            </summary>
+            <param name="disposing"><see cref="M:System.IDisposable.Dispose"/> メソッドが呼ばれたかどうかを示す値。</param>
+        </member>
+        <member name="T:DlibDotNet.DPoint">
+            <summary>
+            2 次元平面に点を定義する倍精度の浮動小数点座標ペア (x 座標と y 座標) を表します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.DPoint.#ctor(System.Double,System.Double)">
+            <summary>
+            座標を指定して、<see cref="T:DlibDotNet.Point"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="x">点の水平位置。</param>
+            <param name="y">点の垂直位置。</param>
+        </member>
+        <member name="P:DlibDotNet.DPoint.X">
+            <summary>
+            この <see cref="T:DlibDotNet.DPoint"/> の x 座標を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.DPoint"/> の x 座標。</value>
+        </member>
+        <member name="P:DlibDotNet.DPoint.Y">
+            <summary>
+            この <see cref="T:DlibDotNet.DPoint"/> の y 座標を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.DPoint"/> の y 座標。</value>
+        </member>
+        <member name="M:DlibDotNet.DPoint.Equals(System.Object)">
+            <summary>
+            この <see cref="T:DlibDotNet.DPoint"/> が、指定した <see cref="T:System.Object"/> と同じ座標を含んでいるかどうかを示します。
+            </summary>
+            <param name="obj">テスト対象の <see cref="T:System.Object"/></param>
+            <returns><paramref name="obj"/> が <see cref="T:DlibDotNet.DPoint"/> で、この <see cref="T:DlibDotNet.DPoint"/> と座標が同じである場合、このメソッドは <code>true</code> を返します。</returns>
+        </member>
+        <member name="M:DlibDotNet.DPoint.GetHashCode">
+            <summary>
+            この <see cref="T:DlibDotNet.DPoint"/> 構造体のハッシュ コードを返します。
+            </summary>
+            <returns>この <see cref="T:DlibDotNet.DPoint"/> 構造体のハッシュ値を指定する整数値。</returns>
+        </member>
+        <member name="M:DlibDotNet.DPoint.op_Equality(DlibDotNet.DPoint,DlibDotNet.DPoint)">
+            <summary>
+            2 つの <see cref="T:DlibDotNet.DPoint"/> 構造体を比較します。 この結果は、2 つの <see cref="T:DlibDotNet.DPoint"/> 構造体の <see cref="P:DlibDotNet.Point.X"/> プロパティと <see cref="P:DlibDotNet.DPoint.Y"/> プロパティの値が等しいかどうかを示します。
+            </summary>
+            <param name="left">比較する <see cref="T:DlibDotNet.DPoint"/>。</param>
+            <param name="right">比較する <see cref="T:DlibDotNet.DPoint"/>。</param>
+            <returns><paramref name="left"/> と <paramref name="right"/> の <see cref="T:DlibDotNet.DPoint"/> 構造体の <see cref="P:DlibDotNet.DPoint.X"/> 値と <see cref="P:DlibDotNet.DPoint.Y"/> 値が等しい場合は <code>true</code> を返します。それ以外の場合は <code>false</code> を返します。</returns>
+        </member>
+        <member name="M:DlibDotNet.DPoint.op_Inequality(DlibDotNet.DPoint,DlibDotNet.DPoint)">
+            <summary>
+            2 つの <see cref="T:DlibDotNet.DPoint"/> オブジェクトを比較します。 この結果は、2 つの <see cref="T:DlibDotNet.DPoint"/> オブジェクトの <see cref="P:DlibDotNet.DPoint.X"/> プロパティと <see cref="P:DlibDotNet.DPoint.Y"/> プロパティの値が異なるかどうかを示します。
+            </summary>
+            <param name="left">比較する <see cref="T:DlibDotNet.DPoint"/>。</param>
+            <param name="right">比較する <see cref="T:DlibDotNet.DPoint"/>。</param>
+            <returns><paramref name="left"/> および <paramref name="right"/> の <see cref="P:DlibDotNet.DPoint.X"/> プロパティまたは <see cref="P:DlibDotNet.DPoint.Y"/> プロパティの値が異なる場合は <code>true</code>。それ以外の場合は <code>false</code>。</returns>
+        </member>
+        <member name="T:DlibDotNet.Point">
+            <summary>
+            2 次元平面に点を定義する整数座標ペア (x 座標と y 座標) を表します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Point.#ctor(System.Int32,System.Int32)">
+            <summary>
+            座標を指定して、<see cref="T:DlibDotNet.Point"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="x">点の水平位置。</param>
+            <param name="y">点の垂直位置。</param>
+        </member>
+        <member name="P:DlibDotNet.Point.X">
+            <summary>
+            この <see cref="T:DlibDotNet.Point"/> の x 座標を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.Point"/> の x 座標。</value>
+        </member>
+        <member name="P:DlibDotNet.Point.Y">
+            <summary>
+            この <see cref="T:DlibDotNet.Point"/> の y 座標を取得または設定します。
+            </summary>
+            <value>この <see cref="T:DlibDotNet.Point"/> の y 座標。</value>
+        </member>
+        <member name="M:DlibDotNet.Point.Equals(System.Object)">
+            <summary>
+            この <see cref="T:DlibDotNet.Point"/> が、指定した <see cref="T:System.Object"/> と同じ座標を含んでいるかどうかを示します。
+            </summary>
+            <param name="obj">テスト対象の <see cref="T:System.Object"/></param>
+            <returns><paramref name="obj"/> が <see cref="T:DlibDotNet.Point"/> で、この <see cref="T:DlibDotNet.Point"/> と座標が同じである場合、このメソッドは <code>true</code> を返します。</returns>
+        </member>
+        <member name="M:DlibDotNet.Point.GetHashCode">
+            <summary>
+            この <see cref="T:DlibDotNet.Point"/> 構造体のハッシュ コードを返します。
+            </summary>
+            <returns>この <see cref="T:DlibDotNet.Point"/> 構造体のハッシュ値を指定する整数値。</returns>
+        </member>
+        <member name="M:DlibDotNet.Point.ToString">
+            <summary>
+            この <see cref="T:DlibDotNet.Point"/> をユーザーが判読できる文字列に変換します。
+            </summary>
+            <returns>この <see cref="T:DlibDotNet.Point"/> を表す文字列。</returns>
+        </member>
+        <member name="M:DlibDotNet.Point.op_Equality(DlibDotNet.Point,DlibDotNet.Point)">
+            <summary>
+            2 つの <see cref="T:DlibDotNet.Point"/> 構造体を比較します。 この結果は、2 つの <see cref="T:DlibDotNet.Point"/> 構造体の <see cref="P:DlibDotNet.Point.X"/> プロパティと <see cref="P:DlibDotNet.Point.Y"/> プロパティの値が等しいかどうかを示します。
+            </summary>
+            <param name="left">比較する <see cref="T:DlibDotNet.Point"/>。</param>
+            <param name="right">比較する <see cref="T:DlibDotNet.Point"/>。</param>
+            <returns><paramref name="left"/> と <paramref name="right"/> の <see cref="T:DlibDotNet.Point"/> 構造体の <see cref="P:DlibDotNet.Point.X"/> 値と <see cref="P:DlibDotNet.Point.Y"/> 値が等しい場合は <code>true</code> を返します。それ以外の場合は <code>false</code> を返します。</returns>
+        </member>
+        <member name="M:DlibDotNet.Point.op_Inequality(DlibDotNet.Point,DlibDotNet.Point)">
+            <summary>
+            2 つの <see cref="T:DlibDotNet.Point"/> オブジェクトを比較します。 この結果は、2 つの <see cref="T:DlibDotNet.Point"/> オブジェクトの <see cref="P:DlibDotNet.Point.X"/> プロパティと <see cref="P:DlibDotNet.Point.Y"/> プロパティの値が異なるかどうかを示します。
+            </summary>
+            <param name="left">比較する <see cref="T:DlibDotNet.Point"/>。</param>
+            <param name="right">比較する <see cref="T:DlibDotNet.Point"/>。</param>
+            <returns><paramref name="left"/> および <paramref name="right"/> の <see cref="P:DlibDotNet.Point.X"/> プロパティまたは <see cref="P:DlibDotNet.Point.Y"/> プロパティの値が異なる場合は <code>true</code>。それ以外の場合は <code>false</code>。</returns>
+        </member>
+        <member name="M:DlibDotNet.Point.NativePoint.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.PointRotator.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.PointTransform.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.PointTransformAffine.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.PointTransformProjective.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.RectangleTransform.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Vector`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.SamplePair.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.OverlayLine.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ClickActionMediator.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.CustomDrawableWindow.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageDisplayOverlayRectActionMediator.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.PerspectiveWindow.OverlayDot.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.PerspectiveWindow.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.OverlayLine.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle,System.Byte)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.Byte"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle,System.UInt16)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.UInt16"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle,System.UInt32)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.UInt32"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle,System.SByte)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.SByte"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle,System.Int16)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.Int16"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle,System.Int32)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.Int32"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle,System.Single)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.Single"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle,System.Double)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.Double"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle,DlibDotNet.RgbPixel)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:DlibDotNet.RgbPixel"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle,DlibDotNet.RgbAlphaPixel)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:DlibDotNet.RgbAlphaPixel"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.Rectangle,DlibDotNet.HsiPixel)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.Rectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:DlibDotNet.HsiPixel"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle,System.Byte)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.Byte"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle,System.UInt16)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.UInt16"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle,System.UInt32)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.UInt32"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle,System.SByte)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.SByte"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle,System.Int16)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.Int16"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle,System.Int32)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.Int32"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle,System.Single)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.Single"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle,System.Double)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:System.Double"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle,DlibDotNet.RgbPixel)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:DlibDotNet.RgbPixel"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle,DlibDotNet.RgbAlphaPixel)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:DlibDotNet.RgbAlphaPixel"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.AddOverlay(DlibDotNet.DRectangle,DlibDotNet.HsiPixel)">
+            <summary>
+            指定されたオーバーレイ矩形をこのオブジェクトに追加し、表示されるようにします。
+            </summary>
+            <param name="rect">表示される矩形を表す <see cref="T:DlibDotNet.DRectangle"/> 構造体。</param>
+            <param name="color">色を表す <see cref="T:DlibDotNet.HsiPixel"/> 値。</param>
+            <exception cref="T:System.ObjectDisposedException"><see cref="T:DlibDotNet.ImageWindow"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.ImageWindow.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.SelectIndexedActionMediator.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.StringActionMediator.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.VoidActionMediator.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageDisplay.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageDisplay.OverlayRect.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Label.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ListBox.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.MenuBar.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.TextField.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.IDlibObject">
+            <summary>
+            dlib のオブジェクトを表現するためのメソッドやプロパティを定義します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.IDlibObject.NativePtr">
+            <summary>
+            ネイティブ構造体のポインタを取得します。
+            </summary>>
+        </member>
+        <member name="M:DlibDotNet.IDlibObject.ThrowIfDisposed">
+            <summary>
+            オブジェクトが破棄されている場合、<see cref="T:System.ObjectDisposedException"/> がスローされます。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.InterestPoint.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.SurfPoint.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.ImageLoadException">
+            <summary>
+            この例外は、dlib での画像読み込みにおける汎用的な例外です。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.ImageLoadException.FilePath">
+            <summary>
+            エラーを発生させたファイル パスを取得します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.ImagePixelFormat">
+            <summary>
+            ImagePixelFormat 列挙型は画像の各ピクセルに対する色データのフォーマットを指定します。            
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.ImagePixelFormat.Bgr">
+            <summary>
+            ピクセル フォーマットが B8G8R8 の符号なし整数です。
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.ImagePixelFormat.Bgra">
+            <summary>
+            ピクセル フォーマットが B8G8R8A8 の符号なし整数です。
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.ImagePixelFormat.Rgb">
+            <summary>
+            ピクセル フォーマットが R8G8B8 の符号なし整数です。
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.ImagePixelFormat.Rgba">
+            <summary>
+            ピクセル フォーマットが R8G8B8A8 の符号なし整数です。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.CorrelationTracker.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.FrontalFaceDetector.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.FullDetection.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.FullObjectDetection.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.MModRect.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ObjectDetector`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.RectDetection.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ScanFHogPyramid`2.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ShapePredictor.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ShapePredictorTrainer.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.TestBoxOverlap.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ChipDetails.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ChipDims.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.HoughTransform.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.PyramidDown.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ImageTransforms.RandomCropper.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.CustomLogger.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Logger.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Matrix`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.MatrixOp.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.MatrixRangeExp`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.MultilayerPerceptron`1">
+            <summary>
+            誤差逆伝播法アルゴリズムによって学習される多層パーセプトロンを表現します。
+            </summary>
+            <typeparam name="T">カーネルの型。</typeparam>
+        </member>
+        <member name="M:DlibDotNet.MultilayerPerceptron`1.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Double,System.Double)">
+            <summary>
+            入力層のノード数、第 1 隠れ層のノード数、第 2 隠れ層のノード数、出力層のノード数、学習率、モメンタムを指定して、<see cref="T:DlibDotNet.MultilayerPerceptron`1"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="nodesInInputLayer">入力層のノード数。</param>
+            <param name="nodesInFirstHiddenLayer">第 1 隠れ層のノード数。</param>
+            <param name="nodesInSecondHiddenLayer">第 2 隠れ層のノード数。</param>
+            <param name="nodesInOutputLayer">出力層のノード数。</param>
+            <param name="alpha">学習率。規定値は 0.1。</param>
+            <param name="momentum">モメンタム。規定値は 0.8。</param>
+            <exception cref="T:System.NotSupportedException">指定されたカーネルの型はサポートしていません。</exception>
+        </member>
+        <member name="M:DlibDotNet.MultilayerPerceptron`1.Operator(DlibDotNet.MatrixBase)">
+            <summary>
+            入力として <paramref name="data"/> が与えられたときのネットワークの出力を返します。出力要素は常に 0.0 から 1.0 の範囲にあります。
+            </summary>
+            <param name="data">入力データ。</param>
+            <returns>ネットワークの出力。</returns>
+            <exception cref="T:System.ArgumentException">指定された行列の型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="data"/> が null 参照。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="data"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.MultilayerPerceptron`1.Train(DlibDotNet.Matrix{System.Double},System.Double)">
+            <summary>
+            与えられた <paramref name="exampleIn"/> が <paramref name="exampleOut"/> になるときの出力が正しくなるようネットワークを訓練します。
+            </summary>
+            <param name="exampleIn">教師データの入力。</param>
+            <param name="exampleOut">教師データの出力。</param>
+            <exception cref="T:System.ArgumentException">指定されたカーネルの型はサポートされていません。</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="exampleIn"/> が null 参照。</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="exampleOut"/> は 0.0 から 1.0 でなければなりません。</exception>
+            <exception cref="T:System.ObjectDisposedException"><paramref name="exampleIn"/> は破棄されています。</exception>
+        </member>
+        <member name="M:DlibDotNet.MultilayerPerceptron`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Pipe`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.ProxyDeserialize">
+            <summary>
+            ファイルから連続したオブジェクトを逆シリアル化します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.ProxyDeserialize.#ctor(System.String)">
+            <summary>
+            シリアル化されたデータを含むファイルパスを指定して、<see cref="T:DlibDotNet.ProxyDeserialize"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="path">シリアル化されたデータを含むファイルパス。</param>
+            <exception cref="T:System.IO.FileNotFoundException"><paramref name="path"/> が見つかりません。</exception>
+        </member>
+        <member name="M:DlibDotNet.ProxyDeserialize.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Queue`1.Kernel1A.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Queue`1.Sort1BC.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Rand.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.SerializationException">
+            <summary>
+            この例外は、シリアライズと逆シリアル化の汎用的な例外です。このクラスは継承できません。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.RunningStats`1">
+            <summary>
+            このクラスは連続する実数から平均、分散、歪度、過剰尖度を計算するメソッドとプロパティを提供します。
+            </summary>
+            <typeparam name="TKernel">The type of real numbers.</typeparam>
+        </member>
+        <member name="M:DlibDotNet.RunningStats`1.#ctor">
+            <summary>
+            <see cref="T:DlibDotNet.RunningStats`1"/> クラスの新しいインスタンスを初期化します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.RunningStats`1.RunningStatsType">
+            <summary>
+            実数の型を取得します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.RunningStats`1.CurrentN">
+            <summary>
+            これまでこのオブジェクトに与えられた点の数を取得します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.RunningStats`1.ExcessKurtosis">
+            <summary>
+            これまでこのオブジェクトに与えられた全ての値の不偏標本尖度を取得します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.RunningStats`1.Max">
+            <summary>
+            これまでこのオブジェクトに与えられた最大の値を取得します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.RunningStats`1.Mean">
+            <summary>
+            これまでこのオブジェクトに与えられた全ての値の平均を取得します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.RunningStats`1.Min">
+            <summary>
+            これまでこのオブジェクトに与えられた最小の値を取得します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.RunningStats`1.Skewness">
+            <summary>
+            これまでこのオブジェクトに与えられた全ての値の不偏標本歪度を取得します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.RunningStats`1.StdDev">
+            <summary>
+            これまでこのオブジェクトに与えられた全ての値の不偏標本標準偏差を取得します。
+            </summary>
+        </member>
+        <member name="P:DlibDotNet.RunningStats`1.Variance">
+            <summary>
+            これまでこのオブジェクトに与えられた全ての値の不偏標本分散を取得します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.RunningStats`1.Clear">
+            <summary>
+            これまでこのオブジェクトに与えられた全ての点を削除します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.RunningStats`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="T:DlibDotNet.RunningStatsType">
+            <summary>
+            RunningStatsType 列挙型は実数の型を指定します。
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.RunningStatsType.Float">
+            <summary>
+            32 ビット浮動小数点値。
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.RunningStatsType.Double">
+            <summary>
+            64 ビット浮動小数点値。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.StdString.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.StdVector`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.DecisionFunction`2.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.KCentroid`2.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.HistogramIntersectionKernel`2.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.LinearKernel`2.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.PolynomialKernel`2.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.RadialBasisKernel`2.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.SigmoidKernel`2.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.KKMeans`2.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.Krls`2.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.StructuralObjectDetectionTrainer`1.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.CustomMultithreadedObject.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+        <member name="M:DlibDotNet.MultithreadedObject.DisposeUnmanaged">
+            <summary>
+            アンマネージ リソースを解放します。
+            </summary>
+        </member>
+    </members>
+</doc>
