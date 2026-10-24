@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
+    <TargetFramework>net10.0</TargetFramework>
     <Authors>Takuya Takeuchi</Authors>
     <Description>Extension package for DlibDotNet</Description>
     <Company />
@@ -33,19 +33,7 @@
     <DocumentationFile>docs\DlibDotNet.Extensions.xml</DocumentationFile>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net461'">
-    <DefineConstants>$(DefineConstants);DOTNET_FRAMEWORK;</DefineConstants>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="$(TargetFramework.Contains('netstandard')) Or $(TargetFramework.Contains('netcoreapp')) ">
-    <DefineConstants>$(DefineConstants);DOTNETCORE</DefineConstants>
-  </PropertyGroup>
-
-  <ItemGroup Condition="!$(TargetFramework.Contains('netstandard')) And !$(TargetFramework.Contains('netcoreapp')) ">
-    <Reference Include="System" />
-  </ItemGroup>
-
-  <ItemGroup Condition="$(TargetFramework.Contains('netstandard')) Or $(TargetFramework.Contains('netcoreapp')) ">
+  <ItemGroup>
     <PackageReference Include="SkiaSharp">
       <Version>4.153.1</Version>
     </PackageReference>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DlibDotNet.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:DlibDotNet.Extensions.GrayscalLumaCoefficients">
+            <summary>
+            Define the standard for converting RGB values to luminance when gray-scaled.
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.Extensions.GrayscalLumaCoefficients.ITU_R_BT_601">
+            <summary>
+            Operate gray-scaled by BT.601 of ITU-R (ITU Radiocommunication Sector) Recommendation. Luminance of formula is 0.299 R + 0.587 G + 0.114 B.
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.Extensions.GrayscalLumaCoefficients.ITU_R_BT_709">
+            <summary>
+            Operate gray-scaled by BT.709 of ITU-R (ITU Radiocommunication Sector) Recommendation. Luminance of formula is 0.2126 R + 0.7152 G + 0.0722 B.
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.Extensions.GrayscalLumaCoefficients.SMPTE_240M">
+            <summary>
+            Operate gray-scaled by 240M specification SMPTER (Society of Motion Picture and Television Engineers) established. Luminance of formula is 0.212 R + 0.701 G + 0.087 B.
+            </summary>
+        </member>
+        <member name="F:DlibDotNet.Extensions.NativeMethods.NativeLibrary">
+            <summary>
+            Native library file name.
+            If Linux, it will be converted to  libDlibDotNetNative.so
+            If MacOSX, it will be converted to  libDlibDotNetNative.dylib
+            If Windows, it will be available after call LoadLibrary.
+            And this file name must not contain period. If it does,
+            CLR does not add extension (.dll) and CLR fails to load library
+            </summary>
+        </member>
+    </members>
+</doc>
